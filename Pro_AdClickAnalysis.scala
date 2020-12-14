@@ -51,7 +51,7 @@ object Pro_AdClickAnalysis {
                 JdbcUtil.executeUpdate(connection,"insert into area_city_ad_count (dt,area,city,adid,count) values (?,?,?,?,?) on duplicate key update count =count+? ",
                 Array(day,area,city,ad,count,count))
             }
-
+              println("xiugai")
             }
             connection.close()
           }
@@ -63,6 +63,7 @@ object Pro_AdClickAnalysis {
     //7.开启任务
     ssc.start()
     ssc.awaitTermination()
+
 
 
   }
