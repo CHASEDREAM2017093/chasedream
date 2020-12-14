@@ -59,7 +59,7 @@ object Pro_AdClickAnalysis {
       }
     )
    // valueDStream.print()
-
+         "202006push"
     //7.开启任务
     ssc.start()
     ssc.awaitTermination()
